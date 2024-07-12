@@ -1,0 +1,49 @@
+.banner{
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 100px;
+    &_1pg{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        img{
+            width: 35vw;
+            height: 80vh;
+            object-fit: cover;
+        }
+        &_infs{
+            height: 80vh;
+            width: 35vw;
+            background-color: white;
+            ul{
+                height: 100%;
+                padding: 80px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                color: rgb(87, 87, 87);
+                li:nth-child(1){
+                    font-size: 1.3rem;
+                }
+                li{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    width: 70%;
+                    margin: auto;
+                    span{
+                        font-weight: 600;
+                        color: rgb(41, 41, 41);
+                    }
+                }
+            }
+        }
+    }
+    &_2pg{
+        background-color: white;
+        &_soc{
+            width: 70vw;
+            background-color: aqua;
+            margin: auto;
+        }
+    }
+}

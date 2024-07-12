@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    font-family: "Roboto", sans-serif;
+    color: gray;
+    background-color: white;
+    h1 {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    div {
+        display: flex;
+        gap: 25px;
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 400;
+            &:hover {
+                cursor: pointer;
+                color: rgb(46, 46, 46);
+            }
+        }
+    }
+}
