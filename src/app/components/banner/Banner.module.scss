@@ -1,38 +1,64 @@
-.banner{
+@keyframes esquerda {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+  @keyframes direita {
+    from {
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+  } 
+.banner {
     font-family: "Roboto", sans-serif;
     color: rgb(85, 85, 85);
     background-color: rgba(255, 255, 255, 0);
     margin-top: 100px;
-    &_1pg{
+
+    &_1pg {
         display: flex;
         justify-content: center;
         width: 100%;
-        img{
+
+        img {
             width: 35vw;
             height: 80vh;
             object-fit: cover;
+            animation: esquerda 2s forwards;
         }
-        &_infs{
+
+        &_infs {
             height: 80vh;
             width: 35vw;
             background-color: white;
-            ul{
+            animation: direita 2s forwards;
+            ul {
                 height: 100%;
                 padding: 80px 0;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 color: rgb(87, 87, 87);
-                li:nth-child(1){
+
+                li:nth-child(1) {
                     font-size: 1.3rem;
                 }
-                li{
+
+                li {
                     list-style: none;
                     display: flex;
                     flex-direction: column;
                     width: 70%;
                     margin: auto;
-                    span{
+
+                    span {
                         font-weight: 600;
                         color: rgb(41, 41, 41);
                     }
@@ -40,38 +66,54 @@
             }
         }
     }
-    &_2pg{
+
+    &_2pg {
         background-color: white;
-        &_soc{
+
+        &_soc {
             width: 70vw;
+            padding: 0 250px;
+            height: 0;
+            opacity: 0;
             background-color: rgb(0, 112, 112);
             margin: auto;
             display: flex;
+            align-items: center;
             justify-content: space-around;
-            padding: 15px 350px;
-            svg{
+            overflow: hidden;
+            transition: opacity 2s ease, height 1s ease;
+
+            svg {
                 font-size: 1.8rem;
                 color: rgb(255, 255, 255);
                 padding: 0;
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                     color: rgb(114, 255, 49);
                 }
             }
         }
-        &_resumo{
+
+        &_resumo {
             text-align: justify;
             padding: 50px;
-            h2{
-                text-align: center;
-                margin-bottom: 20px;
-                font-size: 2rem;
-            }
-            p{
+            opacity: 0;
+            transition: opacity 3s ease;
+
+            p {
                 width: 70%;
                 margin: auto;
                 margin-bottom: 10px;
             }
         }
     }
+}
+
+.show {
+    height: 50px;
+    opacity: 1;
+}
+.showText{
+    opacity: 1;
 }

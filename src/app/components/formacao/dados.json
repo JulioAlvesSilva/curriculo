@@ -1,0 +1,44 @@
+{
+    "tempoCargo": [
+        {
+            "id": 1,
+            "dataInicio": "01/2024",
+            "dataFinal": "01/2025",
+            "cargo": "Engenharia de Software",
+            "nomeEmpresa": "Estácio",
+            "descricao": "A especialização em Engenharia de Software inclui disciplinas fundamentais e avançadas para o desenvolvimento e gestão de projetos de software. Os tópicos abordados são: Análise Orientada a Objetos e Projeto Arquitetural, Arquitetura Orientada a Serviços - SOA e Web Services, Gerenciamento de Projetos de Software, Projeto e Implementação Orientado a Objetos, Qualidade de Software, Desenvolvimento Pessoal, Carreira e Empregabilidade, Fundamentos de Segurança da Informação, Gestão Estratégica de TI, Modelagem de Dados e Projeto e Otimização de Banco de Dados. Esta especialização prepara os profissionais para enfrentar os desafios do desenvolvimento e gestão de software, combinando conhecimentos teóricos e práticos em diversas áreas essenciais da engenharia de software."
+        },
+        {
+            "id": 2,
+            "dataInicio": "04/2023",
+            "dataFinal": "06/2024",
+            "cargo": "Especialização Full Stack",
+            "nomeEmpresa": "Alura",
+            "descricao": "Capacitação abrangente em desenvolvimento Full Stack, cobrindo uma ampla gama de tecnologias e ferramentas essenciais, incluindo desenvolvimento de APIs (REST e SOAP), frameworks e bibliotecas como React.js, Next.js, Redux.js e Spring Boot, além de linguagens de programação como JavaScript e TypeScript. O curso também abrange desenvolvimento de interfaces com SASS e Bootstrap, bancos de dados SQL e NoSQL, e uso de contêineres com Docker. Práticas de desenvolvimento como controle de versão com Git e metodologias ágeis (Scrum e Kanban) são igualmente abordadas, preparando profissionais para desenvolver aplicações robustas e escaláveis, tanto no front-end quanto no back-end, com foco na criação de soluções completas e eficientes."
+        },
+        {
+            "id": 3,
+            "dataInicio": "09/2021",
+            "dataFinal": "04/2023",
+            "cargo": "Gestor de Projetos",
+            "nomeEmpresa": "USP Esalq",
+            "descricao": "Curso abrangendo a aplicação de conhecimentos, habilidades, ferramentas e técnicas para atender aos requisitos do projeto. Enfatiza as fases de início, planejamento, execução, monitoramento, controle e encerramento. Inclui a coordenação de equipes, gerenciamento de recursos, monitoramento de prazos e orçamentos, e garantia do cumprimento dos objetivos. Abrange metodologias como Agile, Scrum e PMBOK, focando na eficiência e sucesso na entrega de projetos."
+        },
+        {
+            "id": 4,
+            "dataInicio": "06/2015",
+            "dataFinal": "06/2020",
+            "cargo": "Engenharia Elétrica",
+            "nomeEmpresa": "Faculdade Anhanguera",
+            "descricao": "O curso de Engenharia Elétrica abrange uma ampla gama de disciplinas técnicas e práticas essenciais para o desenvolvimento e gestão de projetos elétricos. O curso inclui tópicos como Circuitos Elétricos, Sistemas de Potência, Eletrônica Analógica e Digital, Máquinas Elétricas, Automação Industrial, Controle de Processos, Sistemas de Telecomunicações, Energias Renováveis e Sustentabilidade, e Projeto de Instalações Elétricas. Esta especialização proporciona uma formação sólida e abrangente, preparando os profissionais para atuar em diversas áreas da engenharia elétrica, combinando teoria e prática para enfrentar os desafios do setor elétrico."
+        },
+        {
+            "id": 5,
+            "dataInicio": "06/2018",
+            "dataFinal": "09/2020",
+            "cargo": "Curso de Ingles avançado",
+            "nomeEmpresa": "Minds",
+            "descricao": "O curso de inglês proporciona uma formação completa no idioma, abordando desde os fundamentos básicos até o nível avançado. Inclui o desenvolvimento das habilidades de leitura, escrita, conversação e compreensão auditiva, além de práticas de gramática, vocabulário e pronúncia. O curso também oferece imersão cultural, permitindo a compreensão de contextos culturais e sociais onde o inglês é falado. "
+        }
+    ]
+}

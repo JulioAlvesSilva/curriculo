@@ -1,14 +1,21 @@
+'use client';
+
+import { useRef } from 'react';
 import styles from './Banner.module.scss';
 import dados from './dados.json';
 import { FaLinkedin, FaInstagramSquare, FaFacebookSquare } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
+import { transitionCode } from '@/hooks/useTrasition';
+
 export default function BannerMain() {
+    const referencia = useRef(null);
+    const visivel = transitionCode(referencia);
     return (
         <section className={styles.banner}>
             <div className={styles.banner_1pg}>
                 <img src="/imagens/banner/perfil.jpg" alt="fotoPerfil" />
                 <div className={styles.banner_1pg_infs}>
-                    <ul >
+                    <ul>
                         {dados.dadosInfs.map(item => (
                             <li key={item.id}>
                                 <span>{item.name}</span>
@@ -19,13 +26,13 @@ export default function BannerMain() {
                 </div>
             </div>
             <div className={styles.banner_2pg}>
-                <div className={styles.banner_2pg_soc}>
+                <div ref={referencia} className={`${styles.banner_2pg_soc} ${visivel ? styles.show : ''}`}>
                     <FaLinkedin />
                     <FaSquareGithub />
                     <FaInstagramSquare />
                     <FaFacebookSquare />
                 </div>
-                <div className={styles.banner_2pg_resumo}>
+                <div className={`${styles.banner_2pg_resumo} ${visivel ? styles.showText : ''}`} ref={referencia}>
                     <h2>RESUMO</h2>
                     <p>Sou desenvolvedor Full Stack e dedico-me a criar e aprimorar diversos projetos. Meu foco atual é no desenvolvimento web, utilizando a arquitetura SPA (Single Page Application) como padrão de trabalho. Tenho amplo conhecimento em diversas bibliotecas e frameworks, o que me permite garantir a qualidade e eficiência das minhas aplicações.</p>
                     <p>Sou fascinado por código limpo e reutilizável. Atualmente, trabalho no ambiente web e utilizo Next.js como minha principal ferramenta. Escolhi Next.js pela sua versatilidade em utilizar client-side e server-side em um único framework. No entanto, também tenho experiência com Angular e Vue.js, e não teria problemas em migrar para outras tecnologias, se necessário.</p>
@@ -33,5 +40,5 @@ export default function BannerMain() {
                 </div>
             </div>
         </section>
-    )
+    );
 }
