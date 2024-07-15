@@ -1,9 +1,10 @@
-import nodemailer from 'nodemailer'
+import nodemailer from 'nodemailer';
 
 export async function POST(req) {
-    if (req.method === 'POST') {
+    try {
         const body = await req.json();
         console.log(body);
+        
         const transporter = nodemailer.createTransport({
             service: "Gmail",
             host: process.env.HOST_MAIL,
@@ -17,6 +18,7 @@ export async function POST(req) {
                 rejectUnauthorized: false,
             },
         });
+
         const mailOptions = {
             from: 'aps.juliocs@gmail.com',
             to: 'jsilvawebsite@gmail.com',
@@ -28,14 +30,10 @@ export async function POST(req) {
             `
         };
 
-        try {
-            const data = await transporter.sendMail(mailOptions);
-            return Response.json(data)
-        } catch (error) {
-            console.error(error);
-            Response.json(error)
-        }
+        const data = await transporter.sendMail(mailOptions);
+        return new Response(JSON.stringify(data), { status: 200 });
+    } catch (error) {
+        console.error(error);
+        return new Response(JSON.stringify({ error: 'Erro ao enviar o e-mail' }), { status: 500 });
     }
-
-    return { error: 'Método não permitido' };
-};
+}
