@@ -9,9 +9,12 @@ import Habilidades from './components/habilidades';
 import HeaderMain from "./components/header";
 import Projetos from './components/projetos';
 import Rodape from './components/rodape';
+import { useMediaQuery } from 'react-responsive';
+import SmallScreen from './components/header/smallScreen';
 
 export default function PageMain(){
-    const [visivel, setVisivel] = useState("")
+    const [visivel, setVisivel] = useState("");
+    const smallScreen = useMediaQuery({ query: '(max-width: 800px)' })
     useEffect(() => {
         const sections = document.querySelectorAll('section');
 
@@ -40,7 +43,7 @@ export default function PageMain(){
 
     return(
         <main className={styles.main}>
-            <HeaderMain nomeId={visivel}/>
+            {smallScreen? <SmallScreen/> : <HeaderMain nomeId={visivel}/>}
             <BannerMain/>
             <Experiencia/>
             <Formacao/>

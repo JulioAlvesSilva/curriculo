@@ -2,6 +2,7 @@
     color: rgb(255, 255, 255);
     opacity: 0;
     transition: 2s opacity;
+   
     h2 {
         padding: 20px 0;
         background-color: rgba(0, 0, 128, .5);
@@ -10,16 +11,26 @@
     &_containers {
         display: flex;
         justify-content: space-between;
-
+        @media(max-width: 800px) {
+            padding: 0 20px;
+        }
         a {
             width: 70%;
-                margin: 120px 0;
+            margin: 120px 0;
+
+            @media(max-width: 800px) {
+                margin: 50px 0;
+                width: 20%;
+            }
 
             div {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 font-weight: 600;
+                @media(max-width: 800px) {
+                    width: 100%;
+                }
                 &:hover {
                     transition: .5s transform;
                     transform: scale(1.1);
@@ -29,6 +40,15 @@
                 img {
                     width: 150px;
                     border-radius: 50%;
+                    @media(max-width: 800px) {
+                        width: 80px !important;
+                        height: 80px;
+                    }
+                }
+                span{
+                    @media(max-width: 800px) {
+                       display: none;
+                    }
                 }
             }
         }

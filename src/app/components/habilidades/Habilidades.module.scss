@@ -21,12 +21,18 @@
         flex-wrap: wrap;
         margin: auto;
         justify-content: space-around;
+        @media(max-width:800px){
+            width: 95%;
+        }
         div{
             width: 40%;
             background-color: rgba(0, 0, 141, .7);
             margin-bottom: 10px;
             padding: 25px 15px;
             opacity: 0;
+            @media(max-width:800px){
+                width: 95%;
+            }
             h3{
                 text-align: center;
             }

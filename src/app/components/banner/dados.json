@@ -1,29 +1,32 @@
 {
-    "dadosInfs":[
+    "dadosInfs": [
         {
             "id": 1,
             "name": "Julio Cesar Alves da Silva",
-            "inf":"Desenvolverdor Full Stack"
+            "inf": "Desenvolvedor Full Stack"
         },
         {
             "id": 2,
             "name": "Telefone:",
-            "inf":"(62) 993129673"
+            "inf": "(62) 993129673",
+            "href": "tel:+55626993129673"
         },
         {
             "id": 3,
             "name": "E-mail:",
-            "inf":"aps.juliocs@gmail.com"
+            "inf": "aps.juliocs@gmail.com",
+            "href": "mailto:aps.juliocs@gmail.com"
         },
         {
             "id": 4,
             "name": "Endereço:",
-            "inf":"Rua santa Izaira Qd:10 Lt:26 Bairro: Paraíso Anápolis-GO"
+            "inf": "Rua Santa Izaira Qd:10 Lt:26 Bairro: Paraíso Anápolis-GO",
+            "href": "https://maps.app.goo.gl/AGxYrMFR9YE6NUhn6"
         },
         {
             "id": 5,
             "name": "Data de nascimento:",
-            "inf":"24/06/1993"
+            "inf": "24/06/1993"
         }
     ]
 }

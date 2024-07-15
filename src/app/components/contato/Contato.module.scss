@@ -4,15 +4,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media(max-width:800px){
+        padding: 20px 0%;
+    }
     h2{
         color: rgb(85, 85, 85);
         padding: 20px 0;
+        @media(max-width:800px){
+            padding: 10px 0;
+        }
     }
     form{
         width: 50%;
         margin: auto;
+        @media(max-width:800px){
+            width: 90%;
+        }
         div{
             margin-bottom: 10px;
+            @media(max-width:800px){
+                margin-bottom: 15px;
+            }
         }
         input{
             width: 100%;
@@ -38,13 +50,27 @@
                 cursor: pointer;
                 background-color: green;
             }
+            @media(max-width:800px){
+                height: 50px;
+            }
         }
     }
     &_2seq{
         display: flex;
         justify-content: space-between;
+        @media(max-width:800px){
+            flex-direction: column;
+        }
         input{
             width: 49.5% !important;
+            @media(max-width:800px){
+                width: 100% !important;
+            }
         }
+        input:nth-child(1) {
+            @media(max-width:800px){
+                margin-bottom: 15px;
+            }
+          }
     }
 }

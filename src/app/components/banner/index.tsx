@@ -19,7 +19,7 @@ export default function BannerMain() {
                         {dados.dadosInfs.map(item => (
                             <li key={item.id}>
                                 <span>{item.name}</span>
-                                <a href="">{item.inf}</a>
+                                <a href={item.href} target='_blanck'>{item.inf}</a>
                             </li>
                         ))}
                     </ul>
@@ -27,10 +27,18 @@ export default function BannerMain() {
             </div>
             <div className={styles.banner_2pg}>
                 <div ref={referencia} className={`${styles.banner_2pg_soc} ${visivel ? styles.show : ''}`}>
-                    <FaLinkedin />
-                    <FaSquareGithub />
-                    <FaInstagramSquare />
-                    <FaFacebookSquare />
+                    <a href="https://www.linkedin.com/in/j%C3%BAlio-cesar-alves-da-silva-b72732a8/" target='_blanck'>
+                        <FaLinkedin />
+                    </a>
+                    <a href="https://github.com/JulioAlvesSilva" target='_blanck'>
+                        <FaSquareGithub />
+                    </a>
+                    <a href="https://www.instagram.com/julioalves0013?igsh=MTl1YWdkc21wdW9mdQ==" target='_blanck'>
+                        <FaInstagramSquare />
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100000207741200&mibextid=ZbWKwL" target='_blanck'>
+                        <FaFacebookSquare />
+                    </a>
                 </div>
                 <div className={`${styles.banner_2pg_resumo} ${visivel ? styles.showText : ''}`} ref={referencia}>
                     <h2>RESUMO</h2>

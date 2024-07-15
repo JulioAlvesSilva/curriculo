@@ -20,18 +20,28 @@
     font-family: "Roboto", sans-serif;
     color: rgb(85, 85, 85);
     background-color: rgba(255, 255, 255, 0);
-    margin-top: 100px;
-
+    margin-top: 130px;
+    @media(max-width: 800px){
+        margin-top: 30px;
+    }
     &_1pg {
         display: flex;
         justify-content: center;
         width: 100%;
-
+        @media(max-width: 800px){
+            flex-direction: column;
+        }
         img {
             width: 35vw;
             height: 80vh;
             object-fit: cover;
             animation: esquerda 2s forwards;
+            @media(max-width: 800px){
+                width: 90%;
+                margin: auto;
+                height: 60vh;
+                animation: none;
+            }
         }
 
         &_infs {
@@ -39,6 +49,12 @@
             width: 35vw;
             background-color: white;
             animation: direita 2s forwards;
+            @media(max-width: 800px){
+                width: 90%;
+                margin: auto;
+                height: 50vh;
+                animation: none;
+            }
             ul {
                 height: 100%;
                 padding: 80px 0;
@@ -46,7 +62,10 @@
                 flex-direction: column;
                 justify-content: space-between;
                 color: rgb(87, 87, 87);
-
+                @media(max-width: 800px){
+                    height: 100%;
+                    padding: 20px 0;
+                }
                 li:nth-child(1) {
                     font-size: 1.3rem;
                 }
@@ -82,7 +101,13 @@
             justify-content: space-around;
             overflow: hidden;
             transition: opacity 2s ease, height 1s ease;
-
+            @media(max-width: 800px){
+                width: 90%;
+                height: 50px;
+                margin: auto;
+               opacity: 1;
+               padding: 0 20px;
+            }
             svg {
                 font-size: 1.8rem;
                 color: rgb(255, 255, 255);
@@ -100,11 +125,17 @@
             padding: 50px;
             opacity: 0;
             transition: opacity 3s ease;
-
+            @media(max-width: 800px){
+                padding: 5px;
+                margin-top: 15px;
+            }
             p {
                 width: 70%;
                 margin: auto;
                 margin-bottom: 10px;
+                @media(max-width: 800px){
+                    width: 90%;
+                }
             }
         }
     }
