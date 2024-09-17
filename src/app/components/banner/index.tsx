@@ -42,9 +42,11 @@ export default function BannerMain() {
                 </div>
                 <div className={`${styles.banner_2pg_resumo} ${visivel ? styles.showText : ''}`} ref={referencia}>
                     <h2>RESUMO</h2>
-                    <p>Sou desenvolvedor Full Stack e dedico-me a criar e aprimorar diversos projetos. Meu foco atual é no desenvolvimento web, utilizando a arquitetura SPA (Single Page Application) como padrão de trabalho. Tenho amplo conhecimento em diversas bibliotecas e frameworks, o que me permite garantir a qualidade e eficiência das minhas aplicações.</p>
-                    <p>Sou fascinado por código limpo e reutilizável. Atualmente, trabalho no ambiente web e utilizo Next.js como minha principal ferramenta. Escolhi Next.js pela sua versatilidade em utilizar client-side e server-side em um único framework. No entanto, também tenho experiência com Angular e Vue.js, e não teria problemas em migrar para outras tecnologias, se necessário.</p>
-                    <p>Para o back-end, utilizo Prisma como facilitador e PostgreSQL/MySQL para banco de dados relacional, além de MongoDB para banco de dados não relacional, e já trabalhei com Spring Boot para a criação de APIs. Sou apaixonado por codificação e estou sempre em busca de aprender e me aprimorar. A facilidade com que absorvo novos conhecimentos é uma das minhas maiores habilidades. Trabalhar como desenvolvedor não é apenas minha profissão, mas minha paixão. Sinto-me realizado e feliz codificando.</p>
+                    <p>
+                        Sou desenvolvedor Full Stack com vasta experiência na criação e manutenção de projetos completos, abrangendo tanto o front-end quanto o back-end. Domino diversas tecnologias e frameworks, o que me permite entregar soluções robustas e escaláveis em diferentes áreas de desenvolvimento.<br/>
+                        No front-end, trabalho com React.js, Vue.js e diversos frameworks para construir interfaces dinâmicas e intuitivas. No back-end, desenvolvo APIs com Spring Boot, Node.js e utilizo bancos de dados relacionais como PostgreSQL e MySQL, além de MongoDB para soluções NoSQL.<br/>
+                        Aderindo às melhores práticas de desenvolvimento, como código limpo e reutilizável, tenho também experiência com Docker para gerenciamento de containers, o que proporciona flexibilidade e eficiência no desenvolvimento e deploy de aplicações.<br/>
+                        Estou sempre em busca de aprender e me atualizar com novas tecnologias. Minha facilidade em adquirir novos conhecimentos é uma das minhas maiores habilidades. </p>
                 </div>
             </div>
         </section>
